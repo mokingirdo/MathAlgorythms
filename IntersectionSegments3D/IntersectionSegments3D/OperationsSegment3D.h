@@ -9,5 +9,5 @@ public:
 	//returns false if there are no intersections or if the segments partially match
 	static bool Intersect(Segment3D first, Segment3D second, Vector3D &result);
 	static bool InRange(Segment3D segment, Vector3D dot);
-	static bool Ñollinear(Segment3D first, Segment3D second);
+	static bool Collinear(Segment3D first, Segment3D second);
 };

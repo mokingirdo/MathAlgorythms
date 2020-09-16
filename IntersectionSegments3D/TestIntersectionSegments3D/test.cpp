@@ -15,7 +15,7 @@ TEST(TestIntersection, Collinear) {
 
 	Vector3D result;
 	EXPECT_FALSE(OperationsSegment3D::Intersect(first, second, result));
-	EXPECT_TRUE(OperationsSegment3D::Ñollinear(first, second));
+	EXPECT_TRUE(OperationsSegment3D::Collinear(first, second));
 }
 
 TEST(TestIntersection, InRange) {
@@ -34,5 +34,5 @@ TEST(TestIntersection, Crossing) {
 
 	Vector3D result;
 	EXPECT_FALSE(OperationsSegment3D::Intersect(first, second, result));
-	EXPECT_FALSE(OperationsSegment3D::Ñollinear(first, second));
+	EXPECT_FALSE(OperationsSegment3D::Collinear(first, second));
 }

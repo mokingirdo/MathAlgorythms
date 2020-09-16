@@ -9,7 +9,7 @@
      double z1, z2;
 
      //checking for matching / parallelism of lines
-     if (OperationsSegment3D::Ñollinear(first, second))
+     if (OperationsSegment3D::Collinear(first, second))
      {
          return false;
      }
@@ -71,7 +71,7 @@
 
      return true;
  }
- bool OperationsSegment3D::Ñollinear(Segment3D first, Segment3D second)
+ bool OperationsSegment3D::Collinear(Segment3D first, Segment3D second)
  {
 
      double k1 = (first.getEnd().getX() - first.getStart().getX())/(second.getEnd().getX() - second.getStart().getX());
